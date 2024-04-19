@@ -1,2 +1,2 @@
-# goit-algo-hw-03
-goit-algo-hw-03
+# GOIT. Python Programming: Foundation. Home Work #4
+Тема 4. Домашня робота. Робота з датою, часом та розширена робота з рядками
