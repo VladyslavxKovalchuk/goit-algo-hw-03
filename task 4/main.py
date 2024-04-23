@@ -19,14 +19,14 @@ def get_formated_workday(date: date):
 
 
 def _is_leap(year):
-    "year -> 1 if leap year, else 0."
+    "year -> true if leap year, else false."
     return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)
 
 
 def get_next_birthday(birthday: date, fromdate: date):
     if (
-        (_is_leap(birthday.year) == 1)
-        and (_is_leap(fromdate.year) != 1)
+        _is_leap(birthday.year)
+        and not _is_leap(fromdate.year)
         and (birthday.day == 29)
         and (birthday.month == 2)
     ):
